@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif; 
+}
+
+.wrapper{
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wrapper h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error{
+    background: rgba(255, 0, 0, .1);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 2px;
+    font-size: .8rem;
+    color: rgba(255, 0, 0, 1);
+    display: none;
+    transition: all .3s;
+}
+
+.bmiresult{
+    /* background: rgba(255, 0, 0, .1); */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 2px;
+    font-size: .8rem;
+    /* color: rgba(255, 0, 0, 1); */
+    display: none;
+    transition: all .3s;
+}
+
+.show{
+    display: block;
+}
+
+input[type=text]{
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+#submit{
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.height{
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.height > div{
+    width: 48%;
+}
+
+.height > div:last-child{
+    margin-left: 20px;
+}
+
+.height select{
+    width: 100%;
+    padding: 5px;
+}
